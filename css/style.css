@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropdown {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 2px #333;
+    display: none;
+}
+
+.bar,
+.close {
+    font-size: 2em;
+    color: purple;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 1em;
+    display: block;
+    margin: 0 5px;
+}
+
+#menu {
+    padding: 10px 0;
+}
+
+#menuDesktop {
+    display: none;
+}
+
+#menu li {
+    padding: 5px 0;
+}
+
+#menu li a {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: purple;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.btn {
+    width: 90%;
+    margin: auto;
+    margin: 10px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1px solid purple;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#btn1 {
+    background-image: linear-gradient(90deg, #7028e4, #e5b2ca);
+    color: white;
+}
+
+#btn2 {
+    background-color: white;
+    color: purple;
+}
+
+main {
+    background-color: #f5f5f5;
+    padding: 20px 10px;
+}
+
+#mainSec1 {
+    padding: 20px;
+    background-color: white;
+
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 2em;
+        color: black;
+    }
+}
+
+#statikSehife {
+    h3 {
+        font-weight: 600;
+        padding: 20px 0;
+    }
+}
+
+#statikSehifeDiv1 {
+    background-color: #f8f8fa;
+    margin: 5px 0;
+    border-radius: 10px;
+
+    p {
+        padding: 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+}
+
+#elektronTicaret {
+    background-color: #f8f8fa;
+    margin: 5px 0;
+    border-radius: 10px;
+
+}
+
+#range1 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+#range1>button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #7028e4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.range input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4a218233;
+}
+
+.range input[type="range"]::-webkit-slider-runnable-track {
+    height: 12px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #7028e4;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+#range2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#range2 p {
+    font-size: 1.1em;
+}
+
+#metn1,
+#metn2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 100px; */
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+#neticeDiv1,
+#neticeDiv2,
+#neticeDiv4,
+#neticeDiv5 {
+    background-color: #dee7f1;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#deyisenNtc,
+#deyisenNtc2, 
+#deyisenNtc3,
+#deyisenNtc4,
+#deyisenNtc5{
+    color: #7028e4;
+    font-size: 2em;
+}
+
+.rangePadding {
+    margin: 10px 15px 15px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.button {
+    background: #aaa;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2.5px;
+    transition: .2s;
+}
+
+input:checked+.button {
+    background-color: #4a2182;
+}
+
+input:checked+.button::before {
+    transform: translateX(20px);
+}
+
+input[id^="check"] {
+    display: none;
+}
+
+
+#mainSec2,
+#mainSec3,
+#mainSec4,
+#mainSec5,
+#yekunNetice {
+    padding: 20px;
+    background: #fff;
+
+    p,
+    span {
+        font-size: 1.1em;
+    }
+
+    h3 {
+        padding: 10px;
+    }
+}
+
+#neticeDiv5 {
+    margin-bottom: 40px;
+}
+
+#yekunNetice {
+    margin: 10px 0;
+
+    p {
+        padding: 10px 0;
+    }
+
+    span {
+        padding-top: 10px;
+    }
+}
+
+#qeyd {
+    border-top: 1px solid #eee;
+    margin: 5px 0;
+}
+
+#yekun {
+    background-color: #7028e4;
+    padding: 20px 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#sifarisEt {
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #2bc48a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    button {
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+#vebSayt,
+#elektronTicaret,
+#logoDizayn {
+    background: #f8f8fa;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#axtarisMotoDiv3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f8f8fa;
+    border-radius: 10px;
+}
+
+.myCheckbox {
+    padding: 8px 0;
+}
+
+.netice {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #faf4ff;
+}
+
+#footerSec1 {
+    width: 100%;
+    padding: 20px;
+}
+
+#footerLogo svg {
+    margin: 20px 40px;
+    scale: 1.6;
+}
+
+#footerText1 p {
+    padding: 20px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #4a2182;
+}
+
+#footerIcon {
+    padding: 20px 0;
+
+    h4 {
+        font-size: 1.4em;
+        padding: 10px 0;
+        color: #4a2182;
+    }
+}
+
+#iconDiv i {
+    color: #4a2182aa;
+    display: inline-block;
+    padding: 10px;
+    font-size: 2.5em;
+
+    &:hover {
+        color: #4a2182;
+    }
+}
+
+#footerMain2 {
+    >div {
+        padding: 20px 0;
+    }
+
+    h3 {
+        color: #300b60;
+        font-weight: bold;
+        font-size: 2.5em;
+        padding: 5px 0;
+    }
+
+    p {
+        color: #4a2182;
+        padding: 5px 0;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}
+
+#footerSec2 {
+    padding: 0 0 20px 20px;
+
+    >div {
+        padding: 10px 0;
+    }
+
+    i {
+        color: #4a2182;
+        font-size: 1.5em;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    span {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #4a2182;
+    }
+}
+
+#footerSec3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+    color: #4a2182;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #menuDesktop {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        width: 80%;
+        margin: auto;
+    }
+
+    #felx {
+        display: flex;
+        justify-content: space-between;
+    }
+/* 
+    #yekunNetice {
+        position: static;
+    } */
+
+    #sol{
+        width: 60%;
+    }
+
+    #sag {
+        position: absolute;
+        width: 25%;
+        top: 110px;
+        right: 200px;
+    }
+
+    #range1>button {
+        margin: 5px;
+        padding: 15px;
+        background-color: #7028e4;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+    }
+
+    #footerSec1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footerMain2 {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    #footerSec2 {
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #footerSec3 {
+        justify-content: center;
+    }
+}
